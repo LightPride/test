@@ -1,5 +1,6 @@
 body {
 font-family: 'Open Sans', 'Raleway', sans-serif;
+
 }
 
 
@@ -9,6 +10,8 @@ a, p, ul,  a {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3 {
@@ -21,7 +24,7 @@ h1, h2, h3 {
   /* стилі Backdrop'у  */
   opacity: 0;
   visibility: hidden;
-
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +34,6 @@ h1, h2, h3 {
   z-index: 20;
   transition: .3s all;
 }
-
 
 /* стилі модалки */
 
@@ -43,14 +45,12 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
   
-
+  
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
-
-
 
   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
   text-align: center;
@@ -67,6 +67,7 @@ h1, h2, h3 {
 .overlay.active {
   opacity: 1;
   visibility: visible;
+
 }
 
 
@@ -110,12 +111,13 @@ h1, h2, h3 {
 .modal__img-background {
   position: relative;
   border-radius: 50%;
-  
+  margin-bottom: 20px;
   width: 132px;
   height: 132px;
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
       box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
+
 
 .modal__img {
   position: absolute;
@@ -129,6 +131,7 @@ h1, h2, h3 {
 .modal__list {
   display: flex;
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .modal__item {
@@ -160,7 +163,7 @@ h1, h2, h3 {
     line-height: 1.2;
     text-align: center;
     top: 62%;
-  left: 35%;
+  left: 33%;
 }
 
 .modal__item-div {
@@ -169,7 +172,7 @@ h1, h2, h3 {
   background: #9CBE8F;
   border-radius: 50%;
   position: absolute;
-  left: 10%;
+  left: 9.5%;
   top: -2%;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   font-weight: 500;
@@ -187,4 +190,32 @@ h1, h2, h3 {
 
 .modal__item:not(:last-child) {
   margin-right: 10px;
+}
+
+.modal__title--second {
+  font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    
+
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.modal__ingredients-list {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+
+}
+
+.modal__ingredients-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
 }

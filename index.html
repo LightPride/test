@@ -28,39 +28,10 @@
     </header>
 
     <main>
-      <section class="hero">
-        <p class="sub-title">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-text">
-          We are experts in trendy men’s haircuts. <br />
-          We work quickly, carefully and with style.
-        </p>
-        <ul>
-          <li><button type="button">Back</button></li>
-          <li><button type="button">Forward</button></li>
-        </ul>
-        <ul class="hero-list">
-          <li><a href="" rel="noopener noreferrer nofollow" class="hero-link">Instagram</a></li>
-          <li><a href="" rel="noopener noreferrer nofollow" class="hero-link">Youtube</a></li>
-        </ul>
-      </section>
-
-      <section>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
-        <p>
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p>
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
+      
         <a href="#" class="buton js-open-modal" data-modal="1">Открыть окно 1</a>
         <!-- Модалка -->
+        <div class="overlay js-overlay-modal">
         <div class="modal" data-modal="1">
           <!--   Svg іконка для закриття  -->
           <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
@@ -77,10 +48,37 @@
             <li class="modal__item"><p class="modal__p--small">Fats</p><div class="modal__item-div">8,2g</div></li>
             <li class="modal__item"><p class="modal__p">Carbs</p><div class="modal__item-div">40,4g</div></li>
           </ul>
+          <h2 class="modal__title--second">Ingredients</h2>
+          <ul class="modal__ingredients-list">
+            <li class="modal__ingredients-item">
+              <p>Milk</p>
+              <p>100ml</p>
+            </li>
+            <li class="modal__ingredients-item">
+              <p>Belgian chocolate</p>
+              <p>20g</p>
+            </li>
+            <li class="modal__ingredients-item">
+              <p>Cream</p>
+              <p>150ml</p>
+            </li>
+            <li class="modal__ingredients-item">
+              <p>Cocoa powder</p>
+              <p>30g</p>
+            </li>
+            <li class="modal__ingredients-item">
+              <p>Sugar</p>
+              <p>40g</p>
+            </li>
+            <li class="modal__ingredients-item">
+              <p>Vanilla sugar</p>
+              <p>10g</p>
+            </li>
+          </ul>
         </div>
         
         <!-- Backdrop -->
-        <div class="overlay js-overlay-modal"></div>
+        </div>
         <script src="./js/modal.js"></script>
     </main>
 
