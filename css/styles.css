@@ -1,0 +1,25 @@
+body {
+font-family: 'Open Sans', 'Raleway', sans-serif;
+}
+
+/* універсальний - *
+
+
+тега - a, p, ul,  a {
+  text-decoration = none;
+}
+
+id - # 
+#hero-header {
+  font-family: 'Raleway';  (Чаще всего для якорей)
+}
+
+class - .header-btn {
+
+}
+
+атрибут - [type], [type='button']
+
+дочірній  - .header-logo > img
+
+нащадок - .header a
