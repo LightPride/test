@@ -59,140 +59,29 @@
           same wave" with clients. Therefore, we are always ready to improve
           everyone who comes to us!
         </p>
-        <button type="button">ONLINE-BOOKING</button>
-        <ul>
-          <li>
-            <img src="./images/img_1.jpg" alt="barbershop beard shaving" />
-          </li>
-          <li><img src="./images/img_2.jpg" alt="barbershop work" /></li>
-        </ul>
-      </section>
-      <section>
-        <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
-        <ul>
-          <li>
-            <p>Men’s haircut</p>
-            <p>from 300 uah.</p>
-          </li>
-          <li>
-            <p>Beard trim</p>
-            <p>from 300 uah.</p>
-          </li>
-          <li>
-            <p>Mustache trim</p>
-            <p>from 200 uah.</p>
-          </li>
-          <li>
-            <p>Straight razor shave</p>
-            <p>from 200 uah.</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>Trainee’s haircut</p>
-            <p>from 50 uah.</p>
-          </li>
-          <li>
-            <p>Haircut under the nozzle</p>
-            <p>from 200 uah.</p>
-          </li>
-          <li>
-            <p>Children’s haircut (0-12 y.o.)</p>
-            <p>from 300 uah.</p>
-          </li>
-          <li>
-            <p>Camouflage of gray hair</p>
-            <p>from 200 uah.</p>
-          </li>
-        </ul>
-        <button type="button">ONLINE-BOOKING</button>
-      </section>
-      <section>
-        <ul>
-          <li>
-            <span>600</span><sup>+</sup>
-            <p>Satisfied customers per day</p>
-          </li>
-          <li>
-            <span>50</span><sup>+</sup>
-            <p>Awards for excellent service</p>
-          </li>
-          <li>
-            <span>20</span><sup>+</sup>
-            <p>Kyiv’s best barbers</p>
-          </li>
-          <li>
-            <span>100</span><sup>+</sup>
-            <p>Gifts for regular customers</p>
-          </li>
-        </ul>
-        <p>Old traditional school</p>
-        <h2>¿Why people come to us?</h2>
-        <p>
-          Only good things are said about us. But it's better to see and feel 1
-          time than read 10 times.
-        </p>
-      </section>
-      <section>
-        <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
-        <ul>
-          <li>
-            <img src="./images/barber1.jpg" alt="barber John" />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img src="./images/barber2.jpg" alt="barber Michele" />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img src="./images/barber3.jpg" alt="barber Alan" />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 hidden>Barbers job</h2>
-        <p></p>
-        <ul>
-          <li><img src="./images/barberjob1.jpg" alt="barber haircut" /></li>
-          <li>
-            <img src="./images/barberjob2.jpg" alt="barber beard shaving" />
-          </li>
-          <li>
-            <img src="./images/barberjob3.jpg" alt="barber hair cleaning" />
-          </li>
-          <li>
-            <img src="./images/barberjob4.jpg" alt="barber hair shaving" />
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2></h2>
-      </section>
-      <section>
-        <h2>Contacts</h2>
-        <address>
-          <ul>
-            <li>
-              <a
-                href="https://goo.gl/maps/P3xM9a9PjPXsP27DA"
-                target="_blank"
-                rel="noopener norederrer nofollow"
-                >st. Vasylkivska, 7A Kiev, 08132</a
-              >
-            </li>
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-            <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-            </li>
+        <a href="#" class="buton js-open-modal" data-modal="1">Открыть окно 1</a>
+        <!-- Модалка -->
+        <div class="modal" data-modal="1">
+          <!--   Svg іконка для закриття  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+          </svg>
+          <h2 class="modal__title">Chocolate<br> icecream</h2>
+          <div class="modal__img-background">
+            <img class="modal__img" src="./images/Ellipse67.png" alt="">
+          </div>
+          <ul class="modal__list">
+            <li class="modal__item"><p class="modal__p--small">kcal</p><div class="modal__item-div">320</div></li>
+            <li class="modal__item"><p class="modal__p">Prote...</p><div class="modal__item-div">4g</div></li>
+            <li class="modal__item"><p class="modal__p--small">Fats</p><div class="modal__item-div">8,2g</div></li>
+            <li class="modal__item"><p class="modal__p">Carbs</p><div class="modal__item-div">40,4g</div></li>
           </ul>
-        </address>
-      </section>
+        </div>
+        
+        <!-- Backdrop -->
+        <div class="overlay js-overlay-modal"></div>
+        <script src="./js/modal.js"></script>
     </main>
 
     <footer>
