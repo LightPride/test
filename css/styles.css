@@ -3,6 +3,9 @@ font-family: 'Open Sans', 'Raleway', sans-serif;
 
 }
 
+body .overlay {
+  overflow: hidden;
+}
 
 a, p, ul,  a {
   text-decoration: none;
@@ -24,7 +27,8 @@ h1, h2, h3 {
   /* стилі Backdrop'у  */
   opacity: 0;
   visibility: hidden;
-  
+  overflow-y: scroll;
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -45,9 +49,8 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
   
-  
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
@@ -67,7 +70,7 @@ h1, h2, h3 {
 .overlay.active {
   opacity: 1;
   visibility: visible;
-
+  
 }
 
 
@@ -209,6 +212,7 @@ h1, h2, h3 {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
+  margin-bottom: 40px;
 
 }
 
@@ -216,6 +220,51 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-    line-height: 176%;
+    line-height: 1.76;
     letter-spacing: 0.04em;
+}
+
+.call-form {
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+
+.call-form__field {
+  position: relative;
+}
+
+.call-form__field input {
+  width: 240px;
+  margin-bottom: 16px;
+  padding: 11px 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+}
+
+
+.call-form__field label {
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 2.0;
+    position: absolute;
+    top: 5px;
+    left: 11px;
+    
+    color: #131313;
+}
+
+.call-form__field textarea {
+  background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+  width: 240px;
+  resize: none;
+  outline: none;
 }
